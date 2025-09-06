@@ -8,8 +8,8 @@ namespace Taller3DJP252
 {
     internal class Person
     {
-        private string name;
-        private int age;
+        protected string name;
+        protected int age;
 
         public Person(string name, int age)
         {
@@ -17,7 +17,7 @@ namespace Taller3DJP252
             this.age = age;
         }
 
-        public string GetData()
+        public virtual string GetData()
         {
             return $"{name} - {age}";
         }
